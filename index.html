@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+    >
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-md">
+        <div class="relative">
+          <img
+            class="rounded-t-lg w-full"
+            src="https://picsum.photos/800/400"
+            alt="Banner Image"
+          />
+        </div>
+        <div class="flex relative items-center p-6">
+          <div class="absolute -top-16 left-4">
+            <img
+              class="rounded-full border-white border-4 w-24 h-24"
+              src="./images/profile.png"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="mt-4">
+            <h1 class="text-2xl font-bold text-black">Yahya Aqrom</h1>
+            <p class="text-black-200">Bandung, Indonesia</p>
+            <p class="text-black-600 mt-2">
+              As an aspiring frontend developer, I am dedicated to creating
+              beautiful, responsive, and user-friendly web applications.
+            </p>
+            <div class="mt-6">
+              <div class="flex justify-between">
+                <a
+                  class="font-bold text-black-500 hover:text-blue-400 pb-2 border-b-2 hover:border-blue-500 border-blue-500"
+                  data-tab="tab1"
+                  href="#"
+                  >Github</a
+                >
+                <a
+                  class="font-bold text-black-500 hover:text-blue-400 pb-2 border-b-2 hover:border-blue-500 border-transparent"
+                  data-tab="tab2"
+                  href="#"
+                  >LinkedIn</a
+                >
+                <a
+                  class="font-bold text-black-500 hover:text-blue-400 pb-2 border-b-2 hover:border-blue-500 border-transparent"
+                  data-tab="tab3"
+                  href="#"
+                  >Twitter</a
+                >
+                <a
+                  class="font-bold text-black-500 hover:text-blue-400 pb-2 border-b-2 hover:border-blue-500 border-transparent"
+                  data-tab="tab4"
+                  href="#"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="tab1-card"
+          class="transition duration-500 ease-in-out bg-white rounded-lg p-4 pt-0"
+        >
+          <div class="flex">
+            <img
+              class="rounded-full border-2 border-white w-12 h-12"
+              src="./images/github.png"
+              alt="Github Profile Picture"
+            />
+            <div class="ml-4 flex-grow">
+              <h2 class="font-bold">Yahya Aqrom</h2>
+              <p class="text-gray-600">@yahyaqr · 7d</p>
+            </div>
+            <a
+              href="https://github.com/yahyaqr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <span>View Github</span>
+            </a>
+          </div>
+          <p class="mt-4 leading-tight">
+            Just because I don't push to GitHub every day doesn't mean I'm not
+            coding. I try to keep my profile tidy, so feel free to check out my
+            recent works!
+          </p>
+          <p class="mt-4 leading-tight">#Hustle #100DaysOfCode 🔥💻</p>
+        </div>
+        <div
+          id="tab2-card"
+          class="hidden transition duration-500 ease-in-out bg-white rounded-lg p-4 pt-0"
+        >
+          <div class="flex">
+            <img
+              class="rounded-full border-2 border-white w-12 h-12"
+              src="./images/linkedin.jpeg"
+              alt="Profile Picture"
+            />
+            <div class="ml-4 flex-grow">
+              <h2 class="font-bold">Yahya Aqrom</h2>
+              <p class="text-gray-600">@yahya-aqrom · 2d</p>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/yahya-aqrom/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <span>View LinkedIn</span>
+            </a>
+          </div>
+          <p class="mt-4 leading-tight">
+            Just updated my LinkedIn profile with all my latest experiences,
+            projects, and certificates! Check it out to get a glimpse of my
+            professional self and what I can offer.
+          </p>
+          <p class="mt-4 leading-tight">#LinkedIn #Professional 🎓💼</p>
+        </div>
+        <div
+          id="tab3-card"
+          class="hidden transition duration-500 ease-in-out bg-white rounded-lg p-4 pt-0"
+        >
+          <div class="flex">
+            <img
+              class="rounded-full border-2 border-white w-12 h-12"
+              src="./images/twitter.png"
+              alt="Profile Picture"
+            />
+            <div class="ml-4 flex-grow">
+              <h2 class="font-bold">Yahya Aqrom</h2>
+              <p class="text-gray-600">@AqromYahya · online</p>
+            </div>
+            <a
+              href="https://twitter.com/AqromYahya"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <span>View Twitter</span>
+            </a>
+          </div>
+          <p class="mt-4 leading-tight">
+            Twitter is my go-to social media for information and chatter. I use
+            it to share my thoughts and ideas in English, without toxicity.
+          </p>
+          <p class="mt-4 leading-tight">
+            Check out my profile to see what's on my mind! 🧠
+          </p>
+        </div>
+        <div
+          id="tab4-card"
+          class="hidden transition duration-500 ease-in-out bg-white rounded-lg p-4 pt-0"
+        >
+          <div class="flex">
+            <img
+              class="rounded-full border-2 border-white w-12 h-12"
+              src="./images/instagram.png"
+              alt="Profile Picture"
+            />
+            <div class="ml-4 flex-grow">
+              <h2 class="font-bold">Yahya Aqrom</h2>
+              <p class="text-gray-600">@yahyaqr · offline</p>
+            </div>
+            <a
+              href="https://instagram.com/yahyaqr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <span>View Instagram</span>
+            </a>
+          </div>
+          <p class="mt-4 leading-tight">
+            Instagram used to be my go-to platform, but the clutter and spam
+            made it unbearable. Nonetheless, if you want to see my photos, feel
+            free to check out my Instagram!
+          </p>
+          <p class="mt-4 leading-tight">#Moments #Documented 😊📷</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tabs = document.querySelectorAll('[data-tab]');
+      const cards = document.querySelectorAll('[id$="-card"]');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove('border-blue-500'));
+          // Add active class to the clicked tab
+          tab.classList.add('border-blue-500');
+          // Hide all cards
+          cards.forEach((card) => card.classList.add('hidden'));
+          // Show the card corresponding to the clicked tab
+          const cardId = tab.dataset.tab + '-card';
+          const card = document.getElementById(cardId);
+          card.classList.remove('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
